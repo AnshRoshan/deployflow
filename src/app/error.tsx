@@ -1,0 +1,3 @@
+"use client";
+import { CircleAlert } from "lucide-react";
+export default function ErrorPage({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <main className="empty-state" style={{ minHeight: "100vh", justifyContent: "center" }}><span className="empty-icon"><CircleAlert size={28}/></span><h1 style={{ fontSize: 27, letterSpacing: -.8 }}>A small pause in the flow.</h1><p>We couldn't load this workspace. Your saved projects are safe. Please try again.</p><button className="btn btn-primary" onClick={reset}>Try again</button><a href="/login" className="text-link" style={{ marginTop: 18 }}>Back to sign in</a></main>; }

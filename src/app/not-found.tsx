@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { Layers3 } from "lucide-react";
+export default function NotFound() { return <main className="empty-state" style={{ minHeight: "100vh", justifyContent: "center" }}><span className="empty-icon"><Layers3 size={28}/></span><span className="section-eyebrow" style={{ marginBottom: 14 }}>404 · A LITTLE OFF THE FLOW</span><h1 style={{ fontSize: 30, letterSpacing: -1 }}>This page has moved on.</h1><p>The page you're looking for doesn't exist. Your next great idea is still waiting in your workspace.</p><Link href="/overview" className="btn btn-primary">Back to overview</Link></main>; }
